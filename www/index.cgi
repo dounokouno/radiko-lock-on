@@ -20,8 +20,8 @@ MEDIA_DIR = "#{BASE_PATH}/media"
 
 $:.unshift LIB_DIR
 
-require 'radiko'
-require 'radiko/programs'
+require_relative '../lib/radiko'
+require_relative '../lib/radiko/programs'
 
 
 set :run, false                #HTTPサーバ立ち上げないならfalse
